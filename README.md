@@ -1,65 +1,59 @@
-🫀 Heart Disease Prediction Model
+# 🫀 Heart Disease Prediction Model  
 
-This project is an end-to-end Machine Learning pipeline to predict the likelihood of heart disease in patients based on clinical features.
-It was built as a learning project to practice EDA, preprocessing, model building, and deployment with Streamlit.
+This project is a **machine learning-based web application** that predicts the likelihood of heart disease in a patient.  
+It combines **exploratory data analysis (EDA)**, data preprocessing, model building, and a **Streamlit-powered interactive interface**.  
 
-🚀 Project Workflow
-1. Exploratory Data Analysis (EDA)
+---
 
-Before modeling, I performed EDA to:
+## 📌 Project Overview  
+Heart disease is one of the leading causes of death worldwide. Early prediction and detection can help in timely treatment and prevention.  
+This project uses patient health data (such as age, cholesterol, resting BP, chest pain type, etc.) to predict whether the patient is likely to have heart disease.  
 
-Understand data distributions (Age, Cholesterol, Blood Pressure, etc.)
+---
 
-Compare target variable (HeartDisease) with categorical features (Sex, ChestPainType, etc.)
 
-Visualize relationships using histograms, boxplots, countplots, correlation heatmaps, and scatter plots.
+## 📊 Exploratory Data Analysis (EDA)  
+- Distribution plots for numerical features  
+- Correlation heatmap between features  
+- Countplots for categorical variables  
+- Outlier detection and handling  
+- Feature relationships with target (`HeartDisease`)  
 
-Key Insights from EDA:
+---
 
-Certain chest pain types and exercise angina strongly correlate with heart disease.
+## ⚙️ Data Preprocessing  
+- Handling missing values  
+- Encoding categorical variables (OneHotEncoding)  
+- Scaling numerical features (`StandardScaler`)  
+- Train-test split for model validation  
 
-Age, cholesterol, and blood pressure show noticeable trends with the target.
+---
 
-Feature scaling is required for numerical columns.
+## 🤖 Model Building  
+- Models tested: Logistic Regression, Random Forest, etc.  
+- Evaluated using Accuracy, Precision, Recall, F1-Score  
+- Selected the best performing model for deployment  
 
-2. Data Preprocessing
+---
 
-Steps taken:
+## 🌐 Streamlit App  
+The Streamlit app (`app.py`) provides an **interactive UI** for making predictions.  
+Users can input patient details, and the model will predict the probability of heart disease.  
 
-Encoding categorical variables → One-hot encoding (e.g., Sex_M, ChestPainType_ATA, etc.)
+### Running the App  
+```bash
+# Install dependencies
+pip install -r requirements.txt  
 
-Feature scaling → Standardized numerical features (Age, RestingBP, Cholesterol, MaxHR, Oldpeak) using StandardScaler.
+# Run the app
+streamlit run app.py
+```
+---
 
-Ensured consistency between training data and raw input features for Streamlit.
+## Learning Outcomes
+- How to perform EDA & visualization effectively
+- Preprocessing categorical and numerical data
+- Building, training, and evaluating ML models
+- Creating an end-to-end ML pipeline with deployment-ready code
+- Developing an interactive web app using Streamlit
 
-3. Model Building
-
-I trained multiple models and compared them:
-
-Logistic Regression
-
-Random Forest Classifier
-
-Support Vector Machine (SVM)
-
-XGBoost (optional, depending on environment setup)
-
-Metrics Used:
-
-Accuracy
-
-Precision / Recall
-
-ROC-AUC Score
-
-Final model was selected based on a balance between accuracy and interpretability.
-
-4. Deployment with Streamlit
-
-A simple Streamlit web app was built for user interaction.
-
-Users can input their health data (Age, BP, Cholesterol, etc.).
-
-The model predicts whether they are at risk of heart disease (Yes / No).
-
-Streamlit handles preprocessing internally so inputs match the trained model’s feature set.
