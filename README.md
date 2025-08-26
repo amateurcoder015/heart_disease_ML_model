@@ -1,7 +1,9 @@
 # 🫀 Heart Disease Prediction Model  
 
 This project is a **machine learning-based web application** that predicts the likelihood of heart disease in a patient.  
-It combines **exploratory data analysis (EDA)**, data preprocessing, model building, and a **Streamlit-powered interactive interface**.  
+It combines **exploratory data analysis (EDA)**, data preprocessing, model building, and a **Streamlit-powered interactive interface**. 
+<br>
+https://htdqcsdoettchqnq97nugy.streamlit.app/
 
 ---
 
