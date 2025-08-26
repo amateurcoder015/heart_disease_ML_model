@@ -8,7 +8,7 @@ model = joblib.load("KNN_heart_disease_model.pkl")
 scaler = joblib.load('scaler_heart_disease_model.pkl')
 expected_columns = joblib.load('model_columns.pkl')
 
-st.title("Heart Stroke Prediction by akarsh")
+st.title("Heart Stroke Prediction")
 st.markdown("Provide the following details to check your heart stroke risk:")
 
 # Collect user input
