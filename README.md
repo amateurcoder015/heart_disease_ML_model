@@ -1,4 +1,4 @@
-#🫀 Heart Disease Prediction Model
+🫀 Heart Disease Prediction Model
 
 This project is an end-to-end Machine Learning pipeline to predict the likelihood of heart disease in patients based on clinical features.
 It was built as a learning project to practice EDA, preprocessing, model building, and deployment with Streamlit.
