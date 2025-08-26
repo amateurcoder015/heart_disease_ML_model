@@ -3,6 +3,8 @@
 This project is a **machine learning-based web application** that predicts the likelihood of heart disease in a patient.  
 It combines **exploratory data analysis (EDA)**, data preprocessing, model building, and a **Streamlit-powered interactive interface**. 
 <br><br>
+https://htdqcsdoettchqnq97nugy.streamlit.app/
+<br>
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)]((https://htdqcsdoettchqnq97nugy.streamlit.app/))
 
 
